@@ -74,7 +74,7 @@ public class WelcomeActivity extends AppCompatActivity {
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                launchHomeScreen();
+                launchLoginScreen();
             }
         });
 
@@ -88,11 +88,17 @@ public class WelcomeActivity extends AppCompatActivity {
                     // move to next screen
                     viewPager.setCurrentItem(current);
                 } else {
-                    launchHomeScreen();
+                    launchLoginScreen();
                 }
             }
         });
 
+    }
+
+    private void launchLoginScreen() {
+        prefManager.setFirstTimeLaunch(false);
+        startActivity(new Intent(this,LoginScreen.class));
+        finish();
     }
 
     private int getItem(int i) {
@@ -101,7 +107,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, FeaturesScreen.class));
         finish();
     }
 

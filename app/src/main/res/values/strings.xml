@@ -22,4 +22,8 @@
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+    <string name="imageNews">this is the image from news</string>
+    <string name="playbutton">playButton</string>
+    <string name="title_activity_features_screen">FeaturesScreen</string>
+    <string name="title_activity_food__list">Food_List</string>
 </resources>
