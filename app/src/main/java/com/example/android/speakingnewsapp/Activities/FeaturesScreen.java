@@ -1,4 +1,4 @@
-package com.example.android.speakingnewsapp;
+package com.example.android.speakingnewsapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.android.speakingnewsapp.R;
 
 public class FeaturesScreen extends AppCompatActivity implements View.OnClickListener {
     CardView eMenuCard;
@@ -37,8 +39,7 @@ public class FeaturesScreen extends AppCompatActivity implements View.OnClickLis
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(FeaturesScreen.this,ContactScreen.class));
             }
         });
     }

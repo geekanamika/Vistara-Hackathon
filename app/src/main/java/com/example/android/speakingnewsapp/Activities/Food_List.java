@@ -1,4 +1,4 @@
-package com.example.android.speakingnewsapp;
+package com.example.android.speakingnewsapp.Activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +18,7 @@ import com.example.android.speakingnewsapp.Adapters.EMenuAdapter;
 import com.example.android.speakingnewsapp.Adapters.FoodListAdapter;
 import com.example.android.speakingnewsapp.Model.FoodMode;
 import com.example.android.speakingnewsapp.Model.ModelForNews;
+import com.example.android.speakingnewsapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

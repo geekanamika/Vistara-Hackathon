@@ -1,4 +1,4 @@
-package com.example.android.speakingnewsapp;
+package com.example.android.speakingnewsapp.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.example.android.speakingnewsapp.Adapters.EMenuAdapter;
 import com.example.android.speakingnewsapp.Model.ModelForNews;
+import com.example.android.speakingnewsapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.speakingnewsapp.Food_List">
+    tools:context="com.example.android.speakingnewsapp.Activities.Food_List">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

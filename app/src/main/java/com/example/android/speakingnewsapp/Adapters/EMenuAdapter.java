@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.android.speakingnewsapp.Food_List;
+import com.example.android.speakingnewsapp.Activities.Food_List;
 import com.example.android.speakingnewsapp.Model.ModelForNews;
 import com.example.android.speakingnewsapp.R;
 

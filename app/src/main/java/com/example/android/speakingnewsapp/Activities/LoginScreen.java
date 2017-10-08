@@ -1,4 +1,4 @@
-package com.example.android.speakingnewsapp;
+package com.example.android.speakingnewsapp.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.android.speakingnewsapp.Preferences.PrefManager;
+import com.example.android.speakingnewsapp.R;
 
 public class LoginScreen extends AppCompatActivity {
     EditText seatNumber;

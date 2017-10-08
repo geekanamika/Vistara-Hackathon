@@ -1,4 +1,4 @@
-package com.example.android.speakingnewsapp;
+package com.example.android.speakingnewsapp.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.android.speakingnewsapp.Preferences.PrefManager;
+import com.example.android.speakingnewsapp.R;
 
 public class WelcomeActivity extends AppCompatActivity {
     private ViewPager viewPager;
