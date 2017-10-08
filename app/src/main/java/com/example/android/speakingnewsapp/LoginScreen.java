@@ -21,6 +21,7 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+        prefManager = new PrefManager(this);
         seatNumber = (EditText) findViewById(R.id.seat_number);
         seatNumber.setFilters(new InputFilter[]{
                         new InputFilter.LengthFilter(maxLength)
