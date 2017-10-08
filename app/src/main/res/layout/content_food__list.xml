@@ -9,13 +9,7 @@
     tools:context="com.example.android.speakingnewsapp.Activities.Food_List"
     tools:showIn="@layout/activity_food__list">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BEVERAGES"
-        android:id="@+id/emenutype"
-        android:textStyle="bold"
-        android:textSize="32dp"/>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -26,9 +20,12 @@
     <Button
         android:id="@+id/placeorder"
         android:text="Place Order"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
+        android:background="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|center"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="bottom|right" />
 

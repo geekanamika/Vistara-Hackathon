@@ -6,7 +6,7 @@ package com.example.android.speakingnewsapp;
 
 public class AppConfig {
 
-    public static final String ip = "192.168.106.202";
+    public static final String ip = "192.168.43.49";
 
     //login and register api
     public static String URL_LOGIN = "http://" + ip + "/vistara_api/sendRequestToCrew.php";

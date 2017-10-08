@@ -34,7 +34,7 @@ public class FeaturesScreen extends AppCompatActivity implements View.OnClickLis
         servicesCard.setOnClickListener(this);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setImageResource(R.drawable.call);
+        //fab.setImageResource(R.drawable.call);
         //getSupportActionBar().setIcon(R.drawable.call);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +56,8 @@ public class FeaturesScreen extends AppCompatActivity implements View.OnClickLis
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
         if(item.getItemId()== R.id.action_safety) {
-            Toast.makeText(this,"implement",Toast.LENGTH_SHORT).show();
+            Intent i= new Intent(FeaturesScreen.this, SafetyActivity.class);
+            startActivity(i);
         }
         return true;
     }

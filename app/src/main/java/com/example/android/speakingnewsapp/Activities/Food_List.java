@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.android.speakingnewsapp.Adapters.EMenuAdapter;
@@ -27,12 +28,20 @@ public class Food_List extends AppCompatActivity {
 
     RecyclerView foodListRecyclerview;
     List<FoodMode> foodModelList;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food__list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        button = (Button) findViewById(R.id.placeorder);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Food_List.this, "Order Placed", Toast.LENGTH_SHORT).show();
+            }
+        });
         setSupportActionBar(toolbar);
        // Toast.makeText(this, "" + EMenuAdapter.pos, Toast.LENGTH_SHORT).show();
 
@@ -53,23 +62,23 @@ public class Food_List extends AppCompatActivity {
     }
 
     private void createSampleFoodData() {
-        Log.d("MainActivit","inside sample data ");
+        Log.d("MainActivity","inside sample data ");
         foodModelList = new ArrayList<FoodMode>();
-        FoodMode ob = new FoodMode(100, "Pepsi" , 5);
+        FoodMode ob = new FoodMode(100, "Cappuccino Coffee" , 5);
         foodModelList.add(ob);
-        ob = new FoodMode(120,"Lassi",10);
+        ob = new FoodMode(120,"Espresso Coffee",10);
         foodModelList.add(ob);
-        ob = new FoodMode(120,"Pepsi",0);
+        ob = new FoodMode(120,"Latte Coffee",0);
         foodModelList.add(ob);
-        ob = new FoodMode(180,"Juice",0);
+        ob = new FoodMode(180,"Americano Coffee",0);
         foodModelList.add(ob);
-        ob = new FoodMode(120,"Coffee",0);
+        ob = new FoodMode(120,"Orange Juice",0);
         foodModelList.add(ob);
-        ob = new FoodMode(150,"Tea",0);
+        ob = new FoodMode(150,"Lime Water",0);
         foodModelList.add(ob);
-        ob = new FoodMode(120,"Cocola",0);
+        ob = new FoodMode(120,"Tea",0);
         foodModelList.add(ob);
-        ob = new FoodMode(100,"Drink",0);
+        ob = new FoodMode(100,"Diet Coke",0);
         foodModelList.add(ob);
 
 

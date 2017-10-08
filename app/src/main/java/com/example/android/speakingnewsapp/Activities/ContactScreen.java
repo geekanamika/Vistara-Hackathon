@@ -90,6 +90,7 @@ public class ContactScreen extends AppCompatActivity {
                 public void onClick(View v) {
 
                     String message = msg.getText().toString();
+                    msg.setText("");
                     Log.d(TAG, message);
                     PrefManager prefManager;
                     prefManager = new PrefManager(ContactScreen.this);

@@ -16,7 +16,7 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="32dp"
         android:text="TextView"
-        android:textSize="30sp"
+        android:textSize="20sp"
          />
 
     <RelativeLayout
@@ -33,7 +33,7 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="77dp"
             android:layout_marginRight="77dp"
-            app:srcCompat="@drawable/ic_action_name" />
+            android:background="@drawable/plusicon" />
 
         <ImageButton
             android:id="@+id/minus"
@@ -44,8 +44,7 @@
             android:layout_alignTop="@+id/plus"
             android:layout_marginLeft="41dp"
             android:layout_marginStart="41dp"
-
-            app:srcCompat="@drawable/ic_action_name" />
+            android:background="@drawable/minuslogo" />
 
         <TextView
             android:id="@+id/food_price"
@@ -58,8 +57,7 @@
             android:layout_below="@+id/plus"
             android:layout_marginTop="17dp"
             android:text="TextView"
-            android:textSize="20sp"
-             />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/toalObject"
@@ -69,8 +67,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text="2"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

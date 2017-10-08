@@ -46,18 +46,18 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.FoodLi
         holder.foodTitle.setText(food.getFoodname());
         holder.foodPrice.setText(String.valueOf(food.getFoodprice()));
         holder.totalItem.setText(String.valueOf(food.getTotalContent()));
-        holder.plusButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                holder.totalItem.setText(Integer.valueOf(holder.totalItem.getText().toString())+1);
-            }
-        });
-        holder.minusButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                holder.totalItem.setText(Integer.valueOf(holder.totalItem.getText().toString())-1);
-            }
-        });
+//        holder.plusButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                holder.totalItem.setText(Integer.valueOf(holder.totalItem.getText().toString())+1);
+//            }
+//        });
+//        holder.minusButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                holder.totalItem.setText(Integer.valueOf(holder.totalItem.getText().toString())-1);
+//            }
+//        });
     }
 
     @Override

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void createSampleData() {
 
-        Log.d("MainActivit","inside sample data ");
+        Log.d("MainActivity","inside sample data ");
         bufferedNews = new ArrayList<ModelForNews>();
         ModelForNews news = new ModelForNews("Beverages", R.drawable.background1);
         bufferedNews.add(news);
