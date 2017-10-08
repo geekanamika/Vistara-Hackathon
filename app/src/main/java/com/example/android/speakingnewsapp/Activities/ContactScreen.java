@@ -16,6 +16,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.bumptech.glide.Glide;
 import com.example.android.speakingnewsapp.AppConfig;
 import com.example.android.speakingnewsapp.AppController;
+import com.example.android.speakingnewsapp.Preferences.PrefManager;
 import com.example.android.speakingnewsapp.R;
 
 import org.json.JSONException;
@@ -90,7 +91,11 @@ public class ContactScreen extends AppCompatActivity {
 
                     String message = msg.getText().toString();
                     Log.d(TAG, message);
-                    sendRequest("AAA01", message);
+                    PrefManager prefManager;
+                    prefManager = new PrefManager(ContactScreen.this);
+                    String seatNumber = prefManager.getSeatNumber();
+                    Log.d("ContactScreen",seatNumber);
+                    sendRequest(seatNumber, message);
                 }
             });
         }
