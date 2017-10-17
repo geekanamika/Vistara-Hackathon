@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpeakingNewsApp.iml" filepath="$PROJECT_DIR$/SpeakingNewsApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geekanamika.github.io.iml" filepath="$PROJECT_DIR$/geekanamika.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udaan-apk/udaan-apk.iml" filepath="$PROJECT_DIR$/udaan-apk/udaan-apk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udaan-base/app.iml" filepath="$PROJECT_DIR$/udaan-base/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udaan-instantapp/udaan-instantapp.iml" filepath="$PROJECT_DIR$/udaan-instantapp/udaan-instantapp.iml" />
     </modules>
   </component>
 </project>
